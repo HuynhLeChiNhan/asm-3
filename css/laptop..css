@@ -1,0 +1,512 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner-container {
+  padding: 0;
+  background-image: url("../images/banner.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  height: 440px;
+  padding-top: 90px;
+}
+
+.banner-title {
+  color: white;
+  text-align: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.navbar-title {
+  margin: 0 150px;
+}
+
+.navbar-title>img {
+  width: 130px;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0px -1px 14px -8px rgba(0, 0, 0, 0.75);
+  margin-top: -61px;
+}
+
+.navbar-container .navbar-item {
+  border-left: 2px solid #eaeaea;
+  border-right: 2px solid #eaeaea;
+  padding: 5px 20px;
+  margin: 0 -1px;
+  height: 62px;
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 49px;
+}
+
+.navbar-item i {
+  color: rgb(139, 139, 255);
+}
+
+.navbar-container-mobile .navbar-item {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 20px 20px;
+}
+
+.navbar-container-mobile {
+  display: none;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  color: #111212;
+}
+
+.about-container>div {
+  margin-bottom: 20px;
+}
+
+.about-container ul {
+  list-style-type: none;
+}
+
+#job-info .row {
+  padding: 0;
+}
+
+#job-info .col {
+  padding: 0;
+}
+
+.about-container #target {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  padding: 60px 30px 20px 40px;
+}
+
+.about-container #personnal-info {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  padding: 60px 30px 20px 40px;
+}
+
+.about-container h2 {
+  margin-bottom: 20px;
+}
+
+#personnal-info ul li {
+  margin-bottom: 15px;
+}
+
+#personnal-info ul li span {
+  font-weight: bold;
+}
+
+.personnal-info-social-icons a {
+  color: #7ba6dc;
+  margin-top: 20px;
+}
+
+.job-info-container {
+  margin-top: 20px;
+  padding: 30px 7% 30px 7%;
+}
+
+.job-info-container>div>ul {
+  margin-left: 26px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+#email-input>input {
+  width: 481px;
+  border-color: #9f9fa3;
+  border-radius: 3px;
+  border-style: solid;
+  margin-bottom: 8px;
+}
+
+input:focus {
+  box-shadow: -3px -2px 23px -2px rgba(0, 0, 249, 0.15);
+  border-color: #4f9ddc;
+  outline: none;
+}
+
+#email-input>div>#submit {
+  border-width: 1px;
+  background-color: #4f9ddc;
+  padding: 3px 7px;
+  color: #e7e7e7;
+  border-radius: 3px;
+  margin-top: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.experience-time {
+  margin-top: 10px;
+}
+
+.experience-time>span {
+  border: 1px solid #4f9ddc;
+  background-color: #4f9ddc;
+  color: white;
+  border-radius: 14px;
+  padding: 3px 5px;
+}
+
+.education-study-place {
+  margin-bottom: 10px;
+}
+
+.activity-place {
+  margin-bottom: 10px;
+}
+
+.job-info-container>div>ul>li {
+  position: relative;
+}
+
+.job-info-container>div>ul>li::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: #4f9ddc;
+  position: absolute;
+  left: -30px;
+  top: -2px;
+  border-radius: 50%;
+  border: 5px solid rgb(245, 240, 240);
+}
+
+.job-info-items {
+  border: 2px solid #e7e7e7;
+  padding: 30px 20px 30px 20px;
+  position: relative;
+}
+
+.job-info-items>i {
+  position: absolute;
+  top: 10px;
+  left: 350px;
+  font-size: 30px;
+}
+
+.job-info-container-list {
+  list-style: none;
+}
+
+.job-info-items ul li {
+  margin-top: 10px;
+}
+
+.language-container {
+  margin-bottom: 20px;
+}
+
+.point-blue {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  border: 1px solid #4f9ddc;
+  background-color: #4f9ddc;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.point-grey {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  border: 1px solid #dddddd;
+  background-color: #dddddd;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.language-name {
+  display: block;
+  margin-top: 20px;
+}
+
+.hobby-icon {
+  border: 2px solid #6bd7ab;
+  border-radius: 50%;
+  font-size: 20px;
+  display: table;
+  height: 50px;
+  width: 50px;
+  margin: 5px auto;
+}
+
+.hobby-icon>i {
+  display: table-cell;
+  /* font-size: 20px; */
+  vertical-align: middle;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.title {
+  width: 75%;
+  display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+  font-size: 38px;
+}
+
+.hobby-items {
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.skill-name {
+  display: block;
+  margin-top: 20px;
+}
+
+.skill-list {
+  margin-bottom: 20px;
+}
+
+.certificate-details {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.certificate-details img {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.certificate-container {
+  border: 1px solid #f7f7f7;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 30px 60px 30px 60px;
+}
+
+.certificate-details .certificate-details-name {
+  margin: 20px 0 11px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+}
+
+.certificate-details {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* width: 49%; */
+  padding-right: 20px;
+  border-color: #d6c08d;
+  padding-bottom: 20px;
+}
+
+.off {
+  border: none;
+}
+
+.certificate-details-name {
+  font-size: 14px;
+}
+
+.certificate-details>div {
+  /* width: 47%; */
+  font-size: 14px;
+}
+
+.certificate-details-image img {
+  width: 100%;
+}
+
+.certificate-details-info {
+  margin-left: 14px;
+}
+
+#certificate {
+  padding: 30px;
+}
+
+.project-container {
+  padding: 30px 10%;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-image>img {
+  width: 100%;
+}
+
+.project-name {
+  text-transform: uppercase;
+  border-bottom: 2px solid #dddddd;
+  padding: 10px 10px;
+}
+
+.project-details-item {
+  border: 1px solid #ddd;
+  /* width: 30%; */
+}
+
+.project-year {
+  display: inline-block;
+  color: white;
+  margin-right: 5px;
+  border: 1px;
+  background-color: #4f9ddc;
+  padding: 3px 5px 3px 5px;
+  border-radius: 14px;
+}
+
+.project-workplace {
+  display: inline-block;
+}
+
+.project-job {
+  display: inline-block;
+}
+
+.project-years-job-workplace-info {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+}
+
+.project-content {
+  margin-left: 20px;
+  height: 100%;
+}
+
+.project-description {
+  width: 100px;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mission {
+  border-top: 1px solid #ddd;
+}
+
+table td {
+  padding: 8px;
+}
+
+.tech {
+  border-top: 1px solid #dddddd;
+}
+
+.project-title {
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  background-color: #eeebeb;
+  border: #dddddd;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-items {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* display: inline-block; */
+  margin-right: 20px;
+}
+
+.contact-items>a {
+  display: table;
+}
+
+.contact-items>a>* {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.contact-icon {
+  color: #4f9ddc;
+  font-size: 30px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #9f9fa3;
+  /* text-align: center; */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.border-bottom {
+  position: relative;
+}
+
+.border-right {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  background-color: #d6c08d;
+  height: 100px;
+  width: 3px;
+}
+
+.view-button {
+  width: 50%;
+  margin-left: 80px;
+  border: none;
+  margin-top: 20px;
+  background-color: #F5F6BD;
+}
+
+.invalid-label {
+  color: red;
+}
+
+.invalid-value {
+  box-shadow: 0px 0px 0px 2px rgba(255, 0, 0, 0.75);
+
+}
